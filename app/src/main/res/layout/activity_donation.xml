@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationActivity">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:editable="true"
+            android:enabled="true"
+            android:padding="10dp"
+            android:background="@drawable/boarder"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/color_gray_dark"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:padding="10dp"
+            android:editable="true"
+            android:enabled="true"
+            android:lines="3"
+            android:background="@drawable/boarder"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/color_gray_dark"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile Number"
+            android:editable="true"
+            android:enabled="true"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:background="@drawable/boarder"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/color_gray_dark"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edt_amount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount that you want to donate"
+            android:padding="10dp"
+            android:inputType="number"
+            android:background="@drawable/boarder"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/color_gray_dark"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edt_desc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Say Something About Donation"
+            android:padding="10dp"
+            android:lines="3"
+            android:background="@drawable/boarder"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/color_gray_dark"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:fontFamily="@font/sanspro"
+        android:textAllCaps="false"
+        android:textColor="@color/whitecolor"/>
+</RelativeLayout>

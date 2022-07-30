@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="@dimen/margin_10"
+    app:cardCornerRadius="@dimen/margin_10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suyog Jadhav"
+        android:fontFamily="@font/sanspro"
+        android:textSize="@dimen/margin_20"
+        android:padding="@dimen/margin_10"/>
+
+
+</androidx.cardview.widget.CardView>

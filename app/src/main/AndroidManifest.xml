@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kisan360">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo11"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo11"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.kisan360.ContactListActivity"></activity>
+        <activity android:name="com.example.kisan360.SignUpActivity"></activity>
+        <activity android:name="com.example.kisan360.UserEnquiryActivity" />
+        <activity android:name="com.example.kisan360.EnquiryDetailsActivity" />
+        <activity android:name="com.example.kisan360.AdminEnquiryActivity" />
+        <activity android:name="com.example.kisan360.AdminProductDetailsActivity" />
+        <activity android:name="com.example.kisan360.AddTransport" />
+        <activity android:name="com.example.kisan360.AdminApproveProduct" />
+        <activity android:name="com.example.kisan360.AdminHomeActivity" />
+        <activity android:name="com.example.kisan360.AdminLoginActivity" />
+        <activity android:name="com.example.kisan360.TransportActivity" />
+        <activity android:name="com.example.kisan360.BillActivity" />
+        <activity android:name="com.example.kisan360.BuyActivity" />
+        <activity android:name="com.example.kisan360.CategoryActivity" />
+        <activity android:name="com.example.kisan360.ProductEnquiryActivity" />
+        <activity android:name="com.example.kisan360.SampleActivity" />
+        <activity android:name="com.example.kisan360.DonationActivity" />
+        <activity android:name="com.example.kisan360.GovernementSchemeActivity" />
+        <activity android:name="com.example.kisan360.ListProductsActivity" />
+        <activity android:name="com.example.kisan360.RequestActivity" />
+        <activity android:name="com.example.kisan360.PurchaseandSellingActivity" />
+        <activity android:name="com.example.kisan360.FeedbackActivity" />
+        <activity android:name="com.example.kisan360.Merchant" />
+        <activity android:name="com.example.kisan360.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.kisan360.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.example.kisan360.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

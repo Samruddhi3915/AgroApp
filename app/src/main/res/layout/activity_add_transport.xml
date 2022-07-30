@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTransport">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="65dp"
+            android:layout_gravity="center"
+            android:hint="Enter Name"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/margin_8"
+            android:background="@drawable/boarder"/>
+        <EditText
+            android:id="@+id/edtMobileNumber"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Mobile Number"
+            android:fontFamily="@font/sanspro"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:background="@drawable/boarder"/>
+        <EditText
+            android:id="@+id/edtRate"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:hint="Enter Rate (per km)"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/margin_8"
+            android:background="@drawable/boarder"/>
+        <EditText
+            android:id="@+id/edtVehicleNumber"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:hint="Enter Vehicle Number"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/margin_8"
+            android:background="@drawable/boarder"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_gradient"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:fontFamily="@font/sanspro"
+        android:textSize="@dimen/margin_20"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+</RelativeLayout>

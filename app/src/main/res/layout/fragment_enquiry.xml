@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EnquiryFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Your Enquiry"
+        android:fontFamily="@font/sanspro"
+        android:textSize="@dimen/margin_20"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="@dimen/margin_8"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/card_border_lay"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Your Name"
+        android:padding="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"/>
+    <EditText
+            android:id="@+id/edtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/card_border_lay"
+        android:layout_marginTop="10dp"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:hint="Enter Your Mobile Number"
+        android:padding="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"/>
+    <EditText
+        android:id="@+id/edtRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:background="@drawable/card_border_lay"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Remark"
+        android:padding="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"/>
+
+
+    <TextView
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:fontFamily="@font/sanspro"
+        android:textSize="@dimen/margin_20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_20"
+        android:gravity="center"
+        android:padding="@dimen/margin_8"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kisaan 360 INVOICE"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/margin_25"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A7777"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/h7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanspro"
+                    android:text="Paying Person :"
+                    android:textSize="@dimen/margin_20"/>
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanspro"
+                    android:text="Paying Person :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:textSize="@dimen/margin_20"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/h7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanspro"
+                    android:text="Date :"
+                    android:textSize="@dimen/margin_20"/>
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanspro"
+                    android:text="Paying Person :"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:textSize="@dimen/margin_20"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A7777"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Product"
+                    android:fontFamily="@font/sanspro"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/margin_20"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"/>
+               <TextView
+                   android:id="@+id/tv_product"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:background="@color/blockColor"
+                   android:fontFamily="@font/sanspro"
+                   android:textSize="@dimen/margin_20"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Quantity "
+                    android:fontFamily="@font/sanspro"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/margin_20"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"/>
+               <TextView
+                   android:id="@+id/tv_quanity"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:background="@color/blockColor"
+                   android:fontFamily="@font/sanspro"
+                   android:textSize="@dimen/margin_20"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Rate "
+                    android:fontFamily="@font/sanspro"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/margin_20"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"/>
+               <TextView
+                   android:id="@+id/tv_price"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:padding="10dp"
+                   android:background="@color/blockColor"
+                   android:fontFamily="@font/sanspro"
+                   android:textSize="@dimen/margin_20"/>
+            </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7A7777"
+            android:layout_marginTop="@dimen/margin_20"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Total "
+                android:fontFamily="@font/sanspro"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_20"
+                android:textAllCaps="false"
+                android:layout_weight="2"/>
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@color/blockColor"
+                android:fontFamily="@font/sanspro"
+                android:textSize="@dimen/margin_20"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks For Payment !"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/margin_30"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Done"
+        android:fontFamily="@font/sanspro"
+        android:textAllCaps="false"
+        android:textSize="@dimen/margin_20"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

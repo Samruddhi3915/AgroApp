@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeActivity">
+    
+    <include layout="@layout/toolbar"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/products_app"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/agronomy"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Products"
+                    android:fontFamily="@font/sanspro"
+                    android:textSize="@dimen/margin_20"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_transport"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/delivery_truck"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Transport"
+                    android:fontFamily="@font/sanspro"
+                    android:textSize="@dimen/margin_20"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view_enquiry"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/positive_vote"
+                    app:tint="@color/colorAccent"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale Record"
+                    android:fontFamily="@font/sanspro"
+                    android:textSize="@dimen/margin_20"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/user_enquiry"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/avtar"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View User Enquiry"
+                    android:fontFamily="@font/sanspro"
+                    android:textSize="@dimen/margin_20"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>

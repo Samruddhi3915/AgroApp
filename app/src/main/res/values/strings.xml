@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kisaan 360</string>
+    <string name="sample">Hello World!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string-array name="user_array">
+        <item>Select Your Role</item>
+        <item>Farmer</item>
+        <item>Merchant</item>
+    </string-array>
+</resources>

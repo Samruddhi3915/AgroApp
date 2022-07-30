@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyActivity">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter Your Details"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/margin_20"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edt_p_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:editable="false"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_s_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:enabled="false"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_price"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:editable="false"
+            android:enabled="false"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Enter Your Name"
+            android:editable="false"
+            android:enabled="false"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Your Mobile Number"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/h7"
+            android:editable="false"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Your Address"
+            android:fontFamily="@font/sanspro"
+            android:editable="false"
+            android:enabled="false"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_quantity"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Quantity"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+        <EditText
+            android:id="@+id/edt_bid"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Bid Price"
+            android:fontFamily="@font/sanspro"
+            android:padding="@dimen/h7"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fontsize_15"
+            android:background="@drawable/boarder"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:height="30dp"
+        android:background="@drawable/background_gradient"
+        android:fontFamily="@font/sanspro"
+        android:padding="5dp"
+        android:text="Pay Now"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

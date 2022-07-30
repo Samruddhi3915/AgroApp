@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductEnquiryActivity">
+    <include layout="@layout/toolbar"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"/>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample Product"
+        android:fontFamily="@font/sanspro"
+        android:textSize="@dimen/margin_25"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_20"
+        android:padding="@dimen/margin_8"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description :"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller Name :"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_seller_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller Phone :"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_seller_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller Address :"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_seller_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Quantity for Sell :"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_min_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Quantity Available :"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_total_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:fontFamily="@font/sanspro"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_enq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Enquire Now"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/whitecolor"
+            android:textStyle="bold"
+            android:background="@drawable/background_gradient"
+            android:textSize="@dimen/margin_20"/>
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Buy Now"
+            android:textAllCaps="false"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/sanspro"
+            android:textColor="@color/whitecolor"
+            android:textStyle="bold"
+            android:background="@drawable/background_gradient"
+            android:textSize="@dimen/margin_20"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

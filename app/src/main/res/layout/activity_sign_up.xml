@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/agri2"
+    tools:context=".SignUpActivity">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/card_border_lay"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/fontsize_15"
+            android:layout_marginRight="@dimen/fontsize_15"
+            android:hint="Enter Name"
+            android:fontFamily="@font/sanspro"
+            android:textSize="18dp"
+            android:padding="@dimen/margin_10"/>
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:background="@drawable/card_border_lay"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/fontsize_15"
+            android:layout_marginRight="@dimen/fontsize_15"
+            android:hint="Enter Mobile Number"
+            android:fontFamily="@font/sanspro"
+            android:textSize="18dp"
+            android:padding="@dimen/margin_10"/>
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/card_border_lay"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/fontsize_15"
+            android:layout_marginRight="@dimen/fontsize_15"
+            android:hint="Enter Email"
+            android:fontFamily="@font/sanspro"
+            android:textSize="18dp"
+            android:padding="@dimen/margin_10"/>
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/card_border_lay"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/fontsize_15"
+            android:layout_marginRight="@dimen/fontsize_15"
+            android:hint="Enter Address"
+            android:fontFamily="@font/sanspro"
+            android:textSize="18dp"
+            android:padding="@dimen/margin_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/fontsize_15"
+            android:layout_marginLeft="@dimen/fontsize_15"
+            android:background="@drawable/card_border_lay"
+            android:orientation="vertical">
+
+           <Spinner
+               android:id="@+id/spinner"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_gravity="center"
+               android:entries="@array/user_array"
+               android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Your Details"
+        android:fontFamily="@font/sanspro"
+        android:textSize="@dimen/margin_20"
+        android:background="@drawable/background_gradient"
+        android:padding="@dimen/margin_10"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="contentTextSize">16dp</dimen>
+
+    <dimen name="plant_detail_app_bar_height">278dp</dimen>
+
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+
+    <dimen name="plant_item_image_height">95dp</dimen>
+
+    <dimen name="card_side_margin">12dp</dimen>
+    <dimen name="card_bottom_margin">26dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+
+    <!-- elevation for Plant Detail toolbar - used to convert to pixels when hiding/showing -->
+    <dimen name="toolbar_elevation">5dp</dimen>
+
+    <!-- Plant List Header margin -->
+    <dimen name="header_margin">24dp</dimen>
+
+    <!-- minimum height of plant detail page so that the collapsing toolbar can be shown on every page -->
+    <dimen name="plant_description_min_height">555dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="app_bar_height">150dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="expanded_toolbar_height">200dp</dimen>
+    <dimen name="textsize_large">20sp</dimen>
+    <dimen name="textsize_medium">18sp</dimen>
+    <dimen name="textsize_xlarge">30sp</dimen>
+    <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_xsmall">8dp</dimen>
+    <dimen name="spacing_xxsmall">4dp</dimen>
+    <dimen name="border_width">2dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!--shimmer-->
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="placeholder_image">50dp</dimen>
+    <dimen name="placeholder_text_height">8dp</dimen>
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="name">15dp</dimen>
+    <dimen name="chef">12dp</dimen>
+    <dimen name="timestamp">11dp</dimen>
+    <dimen name="description">15dp</dimen>
+    <dimen name="price">13dp</dimen>
+
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_180">170dp</dimen>
+    <dimen name="fontsize_13">14sp</dimen>
+    <dimen name="fontsize_11">12sp</dimen>
+    <dimen name="fontsize_12">13sp</dimen>
+    <dimen name="fontsize_15">18sp</dimen>
+    <dimen name="font_large">18dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+
+</resources>

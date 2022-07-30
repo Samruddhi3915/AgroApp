@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/margin_20"
+    android:layout_margin="@dimen/margin_5"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <TextView
+           android:id="@+id/tv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Suyog Jadhav"
+           android:fontFamily="@font/sanspro"
+           android:textSize="@dimen/margin_20"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:padding="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle No :"
+                android:fontFamily="@font/sanspro"
+                android:textSize="@dimen/margin_20"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/tv_vehicleno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suyog Jadhav"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/sanspro"
+                android:textSize="@dimen/margin_20"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel Rate (per km) :"
+                android:fontFamily="@font/sanspro"
+                android:textSize="@dimen/margin_20"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suyog Jadhav"
+                android:textColor="@color/bg_screen1"
+                android:fontFamily="@font/sanspro"
+                android:textSize="@dimen/margin_20"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
