@@ -47,7 +47,7 @@ Button btn_reg;
 
 
 
-        edt_bid=findViewById(R.id.edt_bid);
+        //edt_bid=findViewById(R.id.edt_bid);
         edt_quantity=findViewById(R.id.edt_quantity);
         edt_p_name=findViewById(R.id.edt_p_name);
         edt_s_name=findViewById(R.id.edt_s_name);
@@ -77,15 +77,16 @@ Button btn_reg;
                 String phone=edt_phone.getText().toString();
                 String address=edt_address.getText().toString();
                 String quantity=edt_quantity.getText().toString();
-                String bid_price=edt_bid.getText().toString();
+                //String bid_price=edt_bid.getText().toString();
 
 
-                if (TextUtils.isEmpty(name)||TextUtils.isEmpty(phone)||TextUtils.isEmpty(address)||TextUtils.isEmpty(quantity)||TextUtils.isEmpty(bid_price)){
+                if (TextUtils.isEmpty(name)||TextUtils.isEmpty(phone)||TextUtils.isEmpty(address)||TextUtils.isEmpty(quantity)){
+                    //||TextUtils.isEmpty(bid_price)
                     Toast.makeText(BuyActivity.this, "please fill all details Properly", Toast.LENGTH_SHORT).show();
                 }else {
                     process_dialog = builder.build();
                     process_dialog.show();
-                    addEnquiry(product_name,product_price,seller_name,name,phone,address,quantity,bid_price);
+                    addEnquiry(product_name,product_price,seller_name,name,phone,address,quantity);//,bid_price
                 }
             }
         });
@@ -95,13 +96,13 @@ Button btn_reg;
 
     }
 
-    private void addEnquiry(String product_name, String product_price, String seller_name, final String name, String phone, String address,final String quantity, final String bid_price) {
+    private void addEnquiry(String product_name, String product_price, String seller_name, final String name, String phone, String address,final String quantity) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(APIUrl.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()) //Here we are using the GsonConverterFactory to directly convert json data to object
                 .build();
         APIService api = retrofit.create(APIService.class);
-        Call<DataModel> call = api.buyApi(product_name, product_price, seller_name, name, phone, address,quantity,bid_price);
+        Call<DataModel> call = api.buyApi(product_name, product_price, seller_name, name, phone, address,quantity);//,bid_price
         call.enqueue(new Callback<DataModel>() {
             @Override
             public void onResponse(Call<DataModel> call, Response<DataModel> response) {

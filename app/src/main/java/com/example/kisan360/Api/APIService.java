@@ -92,8 +92,8 @@ public interface APIService {
             @Field("name") String name,
             @Field("phone") String phone,
             @Field("address") String address,
-            @Field("quantity") String quantity,
-            @Field("bid_price") String bid_price
+            @Field("quantity") String quantity
+            //@Field("bid_price") String bid_price
     );
 
     @FormUrlEncoded

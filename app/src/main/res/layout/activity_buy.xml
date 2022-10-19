@@ -112,18 +112,7 @@
             android:layout_marginTop="@dimen/fontsize_15"
             android:background="@drawable/boarder"
             />
-        <EditText
-            android:id="@+id/edt_bid"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:hint="Enter Bid Price"
-            android:fontFamily="@font/sanspro"
-            android:padding="@dimen/h7"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/fontsize_15"
-            android:background="@drawable/boarder"
-            />
+        
 
 
     </LinearLayout>
